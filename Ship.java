@@ -2,12 +2,12 @@ package ships;
 
 public class Ship implements Runnable {
 
-	private boolean shipTurn;
+	private int shipTurn;
 	private int boxesPerShip;
 	private ShipPort shipPort;
 	private String shipName;
 
-	public Ship(boolean shipTurn, int boxesPerShip, ShipPort shipPort, String shipName) {
+	public Ship(int shipTurn, int boxesPerShip, ShipPort shipPort, String shipName) {
 		super();
 		this.shipTurn = shipTurn;
 		this.boxesPerShip = boxesPerShip;
@@ -15,11 +15,11 @@ public class Ship implements Runnable {
 		this.shipName = shipName;
 	}
 
-	public boolean getShipTurn() {
+	public int getShipTurn() {
 		return shipTurn;
 	}
 
-	public void setShipTurn(boolean shipTurn) {
+	public void setShipTurn(int shipTurn) {
 		this.shipTurn = shipTurn;
 	}
 

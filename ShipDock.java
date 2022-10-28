@@ -31,7 +31,7 @@ public class ShipDock {
 		for (int i = 0; i < 10; i++) {
 			ship.setBoxesPerShip(10 - i);
 			System.out.println("Док " + dockNumber + " - " + dockName + ", корабль " + ship.getShipName() + ", ящиков: " + ship.getBoxesPerShip());
-			Thread.sleep(500);
+			Thread.sleep(100);
 		}
 		System.out.println(ship.getShipName() + " завершил выгрузку в доке " + dockNumber + " - " + dockName);
 	}
